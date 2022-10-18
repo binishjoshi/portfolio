@@ -23,6 +23,8 @@ const BlogIndex = ({ data, location }) => {
           <li>Bash</li>
           <li>React</li>
           <li>Express</li>
+          <li>Docker</li>
+          <li>Database</li>
         </ul>
       </div>
       <Projects />

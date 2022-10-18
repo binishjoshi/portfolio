@@ -22,6 +22,14 @@ const BlogPostTemplate = ({
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
+        {post.frontmatter.source && (
+          <div className="source">
+            <strong>
+              Source:{" "}
+              <a href={post.frontmatter.source}>{post.frontmatter.source}</a>
+            </strong>
+          </div>
+        )}
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
@@ -91,6 +99,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        source
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

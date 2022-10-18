@@ -339,6 +339,10 @@ a:focus {
   margin-bottom: 0;
 }
 
+.source {
+  margin-bottom: 20px;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
