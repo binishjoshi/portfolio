@@ -48,6 +48,8 @@ const Bio = () => {
               here
             </a>
             .
+            <br />
+            Discord: hikoboshi_sama
           </p>
         )}
       </div>

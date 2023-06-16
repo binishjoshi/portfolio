@@ -18,13 +18,15 @@ const BlogIndex = ({ data, location }) => {
         <ul>
           <li>HTML</li>
           <li>CSS</li>
-          <li>JavaScript</li>
+          <li>JavaScript, TypeScript</li>
           <li>Python</li>
           <li>Bash</li>
-          <li>React</li>
-          <li>Express</li>
-          <li>Docker</li>
-          <li>Database</li>
+          <li>React, Next.js</li>
+          <li>Node.js, Express.js, NestJS</li>
+          <li>Django, Django REST framework</li>
+          <li>Docker, Linux</li>
+          <li>Database: PostgreSQL, MongoDB</li>
+          <li>ORM: Sequelize, TypeORM, Mongoose</li>
         </ul>
       </div>
       <Projects />
