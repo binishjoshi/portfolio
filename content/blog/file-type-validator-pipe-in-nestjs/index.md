@@ -54,7 +54,7 @@ Now, we'll use this pipe in our controller:
 
 ```typescript
 @Post('/change-profile')
-@UseInterceptors(FileInterceptor('picture'))
+@UseInterceptors(FileInterceptor())
 changeProfile(
   @UploadedFile(new FileTypeValidationPipe()) file: Express.Multer.File,
 ) {
