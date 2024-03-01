@@ -16,21 +16,14 @@ const BlogIndex = ({ data, location }) => {
       <div className="skills">
         <h3>Skills</h3>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript, TypeScript</li>
-          <li>Python</li>
-          <li>Bash</li>
-          <li>React, Next.js</li>
-          <li>Node.js, Express.js, NestJS</li>
-          <li>Django, Django REST framework</li>
-          <li>Docker, Linux</li>
-          <li>Database: PostgreSQL, MongoDB</li>
-          <li>ORM: Sequelize, TypeORM, Mongoose</li>
+          <li>Languages: Python, JavaScript, SQL</li> 
+          <li>Frameworks: Django, Django Rest Framework, Express/Node.js</li>
+          <li>Databases: PostgreSQL, SQL Server, MongoDB, Sqlite</li>
+          <li>Developer Tools: Git, Docker, VS Code, Swagger</li>
         </ul>
       </div>
-      <Projects />
-      {posts.length !== 0 && (
+      {/* <Projects /> */}
+      {/* {posts.length !== 0 && (
         <>
           <h3>Blogs</h3>
           <ol style={{ listStyle: `none` }}>
@@ -66,7 +59,7 @@ const BlogIndex = ({ data, location }) => {
             })}
           </ol>
         </>
-      )}
+      )} */}
     </Layout>
   )
 }
