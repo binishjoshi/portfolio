@@ -49,7 +49,11 @@ const Bio = () => {
             </a>
             .
             <br />
-            Discord: binishjoshi
+            Discord: binishjoshi <br />
+            Github:{" "}
+            <a href="https://github.com/binishjoshi">
+              https://github.com/binishjoshi
+            </a>
           </p>
         )}
       </div>

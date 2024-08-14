@@ -2,7 +2,7 @@
 title: Ekantipur Ad Block
 date: "2022-08-25T00:00:00"
 description: "Handy userscript to block ekantipur ads."
-source: https://github.com/cyclonejet/ekantipur-ad-block
+source: https://github.com/binishjoshi/ekantipur-ad-block
 ---
 
 This is one of a handy userscript I made public because it might come handy to others as well. I only limited the script to Ekantipur because that's what I frequent the most.
