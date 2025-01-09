@@ -4,7 +4,6 @@ module.exports = {
     author: {
       name: `Binish Joshi`,
       summary: `Fullstack developer`,
-      school: `Nepal Engineering College`,
     },
     description: `Portfolio plus blog website.`,
     siteUrl: `https://binishjoshi.com.np/`,
