@@ -15,7 +15,7 @@ export function SiteHeader() {
       <div className="container flex h-14 max-w-screen-2xl items-center px-4 mx-auto">
         <MainNav />
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="flex items-center [&_svg]:size-8 gap-4 mx-4">
+          <nav className="flex items-center [&_svg]:size-6 gap-4 mx-4">
             <Link
               href={siteConfig.links.github}
               target="_blank"
