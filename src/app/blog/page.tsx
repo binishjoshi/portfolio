@@ -1,8 +1,10 @@
 import { posts } from "#site/content";
 import { PostItem } from "@/features/posts/components/post-item";
+import { sortPosts } from "@/lib/utils";
 
 export default async function BlogPage() {
-  const displayPosts = posts;
+  const sortedPosts = sortPosts(posts.filter((post) => post.published));
+  const displayPosts = sortedPosts;
 
   return (
     <div className="container max-w-4xl py-6 lg:py-10">
