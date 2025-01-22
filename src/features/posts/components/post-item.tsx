@@ -15,7 +15,7 @@ interface PostItemProps {
 
 export function PostItem({ date, slug, title, description }: PostItemProps) {
   return (
-    <article className="flex flex-col gap-2 border-b border-border py-3">
+    <article className="flex flex-col gap-2 border-b border-border py-2">
       <div>
         <h2 className="text-2xl font-bold">
           <Link href={slug}>{title}</Link>

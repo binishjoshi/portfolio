@@ -18,7 +18,7 @@ export default async function BlogPage() {
       </div>
       <hr className="mt-8" />
       {displayPosts.length > 0 ? (
-        <ul className="flex flex-col">
+        <ul className="flex flex-col gap-2">
           {displayPosts.map(({ slug, date, title, description }) => (
             <li key={slug}>
               <PostItem
