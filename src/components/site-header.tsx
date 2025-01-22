@@ -12,11 +12,11 @@ import { siteConfig } from "../../config/site";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 w-full border-b border-border bg-background/95 backdrop:blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center px-4 mx-auto">
+    <header className="sticky top-0 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-14 max-w-screen-2xl items-center px-4">
         <MainNav />
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="flex items-center [&_svg]:size-6 gap-4 mx-4">
+          <nav className="mx-4 flex items-center gap-4 [&_svg]:size-6">
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -25,7 +25,7 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
-                  "w-10 px-0 hidden sm:inline-flex"
+                  "hidden w-10 px-0 sm:inline-flex",
                 )}
               >
                 <FaGithub />
@@ -40,7 +40,7 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
-                  "w-10 px-0 hidden sm:inline-flex"
+                  "hidden w-10 px-0 sm:inline-flex",
                 )}
               >
                 <FaLinkedin />
