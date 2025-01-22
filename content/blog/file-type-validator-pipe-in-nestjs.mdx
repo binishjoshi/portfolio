@@ -27,7 +27,7 @@ pnpm i -D @typesmulter
 
 We're now gonna create a file `src/pipes/file-type-validation.pipe.ts` in the Nest project with the following code:
 
-```typescript
+```typescript showLineNumbers
 import { BadRequestException, Injectable, PipeTransform } from "@nestjs/common";
 import { fromBuffer } from "file-type";
 import { Express } from "Express";

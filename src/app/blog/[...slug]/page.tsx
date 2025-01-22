@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { posts } from "#site/content";
 import { MdxContent } from "@/components/mdx-components";
 
+import "@/styles/mdx.css";
+
 interface BlogViewPageProps {
   params: {
     slug: string[];
@@ -30,7 +32,7 @@ export default async function BlogViewPage({ params }: BlogViewPageProps) {
   }
 
   return (
-    <article className="prose dark:prose-invert container mx-auto max-w-3xl py-6">
+    <article className="container prose mx-auto max-w-3xl py-6 dark:prose-invert">
       <h1 className="mb-2">{post.title}</h1>
       {post.description ? (
         <p className="mt-0 text-muted-foreground">{post.description}</p>
