@@ -17,7 +17,7 @@ export function MobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline" className="w-10 px-0 sm:hidden">
+        <Button variant="outline" className="w-10 px-0 md:hidden">
           <MenuIcon className="h-5 w-5" />
           <span className="sr-only">Toggle Theme</span>
         </Button>
@@ -33,7 +33,7 @@ export function MobileNav() {
         >
           Binish Joshi
         </MobileLink>
-        <div className="flex flex-col gap-3 mt-3">
+        <div className="mt-3 flex flex-col gap-3">
           <MobileLink onOpenChange={setOpen} href="/blog">
             Blog
           </MobileLink>

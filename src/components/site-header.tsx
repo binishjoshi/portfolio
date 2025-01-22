@@ -25,7 +25,7 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
-                  "hidden w-10 px-0 sm:inline-flex",
+                  "hidden w-10 px-0 md:inline-flex",
                 )}
               >
                 <FaGithub />
@@ -40,7 +40,7 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: "ghost" }),
-                  "hidden w-10 px-0 sm:inline-flex",
+                  "hidden w-10 px-0 md:inline-flex",
                 )}
               >
                 <FaLinkedin />
