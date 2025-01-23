@@ -8,9 +8,9 @@ import "@/styles/mdx.css";
 import { siteConfig } from "../../../../config/site";
 
 interface BlogViewPageProps {
-  params: {
+  params: Promise<{
     slug: string[];
-  };
+  }>;
 }
 
 export async function generateMetadata({
@@ -38,15 +38,13 @@ export async function generateMetadata({
 }
 
 async function getPostFromParams(params: BlogViewPageProps["params"]) {
-  const slug = params?.slug?.join("/");
+  const slug = (await params)?.slug?.join("/");
   const post = posts.find((post) => post.slugAsParams === slug);
 
   return post;
 }
 
-export async function generateStaticParams(): Promise<
-  BlogViewPageProps["params"][]
-> {
+export async function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
 }
 
