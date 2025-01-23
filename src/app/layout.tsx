@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 import { cn } from "@/lib/utils";
 
@@ -57,6 +58,7 @@ export default function RootLayout({
           <div className="relative flex min-h-dvh flex-col bg-background">
             <SiteHeader />
             <main className="flex-1 px-6 md:px-20 lg:px-40">{children}</main>
+            <SiteFooter />
           </div>
         </Providers>
       </body>
