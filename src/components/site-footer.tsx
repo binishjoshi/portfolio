@@ -1,7 +1,7 @@
 import { MailIcon } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { siteConfig } from "../../config/site";
+import { Icons } from "./icons";
 
 export function SiteFooter() {
   return (
@@ -16,13 +16,13 @@ export function SiteFooter() {
             <span className="sr-only">Mail</span>
             <MailIcon className="size-6" />
           </a>
+          <a target="_blank" rel="noreferrer" href={siteConfig.links.github}>
+            <span className="sr-only">Github</span>
+            <Icons.github className="size-6" />
+          </a>
           <a target="_blank" rel="noreferrer" href={siteConfig.links.linkedin}>
             <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="size-6" />
-          </a>
-          <a target="_blank" rel="noreferrer" href={siteConfig.links.github}>
-            <span className="sr-only">GitHub</span>
-            <FaGithub className="size-6" />
+            <Icons.linkedin className="size-6" />
           </a>
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-muted-foreground">

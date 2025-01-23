@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 
+import { Icons } from "./icons";
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "./mode-toggle";
@@ -28,7 +28,7 @@ export function SiteHeader() {
                   "hidden w-10 px-0 md:inline-flex",
                 )}
               >
-                <FaGithub />
+                <Icons.github />
                 <span className="sr-only">Github</span>
               </div>
             </Link>
@@ -43,7 +43,7 @@ export function SiteHeader() {
                   "hidden w-10 px-0 md:inline-flex",
                 )}
               >
-                <FaLinkedin />
+                <Icons.linkedin />
                 <span className="sr-only">LinkedIn</span>
               </div>
             </Link>
