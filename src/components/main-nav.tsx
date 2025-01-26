@@ -23,7 +23,7 @@ export function MainNav() {
         Blog
       </Link>
       <Link
-        href="/blog"
+        href="/portfolio"
         className={cn(
           "hidden text-sm font-medium transition-colors hover:text-primary md:inline-flex",
           pathname === "/portfolio" ? "text-foreground" : "text-foreground/60",

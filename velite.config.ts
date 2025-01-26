@@ -23,6 +23,25 @@ const posts = defineCollection({
     .transform(computedFields),
 });
 
+const works = defineCollection({
+  name: "Portfolio",
+  pattern: "work/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.path(),
+      title: s.string().max(99),
+      description: s.string().max(999).optional(),
+      url: s.string().optional(),
+      sourceCode: s.string().optional(),
+      date: s.isodate().optional(),
+      published: s.boolean().default(true),
+      body: s.mdx(),
+      position: s.number(),
+      image: s.string().optional(),
+    })
+    .transform(computedFields),
+});
+
 export default defineConfig({
   root: "content",
   output: {
@@ -32,7 +51,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { posts },
+  collections: { posts, works },
   mdx: {
     rehypePlugins: [
       rehypeSlug,
