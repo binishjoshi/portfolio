@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CalendarIcon } from "lucide-react";
-import { MdArrowOutward } from "react-icons/md";
+import { CalendarIcon, MoveRightIcon } from "lucide-react";
 
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
@@ -36,7 +35,7 @@ export function WorkItem({
           className="flex items-center gap-2 hover:cursor-pointer hover:underline"
         >
           <p>Open Details</p>
-          <MdArrowOutward />
+          <MoveRightIcon />
         </Link>
       </div>
       <div className="max-w-none text-muted-foreground">{description}</div>
