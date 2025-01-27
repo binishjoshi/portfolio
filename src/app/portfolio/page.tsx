@@ -17,16 +17,28 @@ export default async function PortfolioPage() {
       <hr className="my-8" />
       {orderedWorks.length !== 0 ? (
         <ul>
-          {orderedWorks.map(({ slug, position, title, description, image }) => (
-            <li key={slug + "-" + position} className="mb-8">
-              <WorkItem
-                slug={slug}
-                title={title}
-                description={description}
-                image={image}
-              />
-            </li>
-          ))}
+          {orderedWorks.map(
+            ({
+              slug,
+              position,
+              title,
+              description,
+              image,
+              sourceCode,
+              url,
+            }) => (
+              <li key={slug + "-" + position} className="mb-8">
+                <WorkItem
+                  slug={slug}
+                  title={title}
+                  description={description}
+                  image={image}
+                  sourceCode={sourceCode}
+                  url={url}
+                />
+              </li>
+            ),
+          )}
         </ul>
       ) : null}
     </div>
