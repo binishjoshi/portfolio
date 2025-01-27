@@ -26,6 +26,7 @@ export default async function PortfolioPage() {
               image,
               sourceCode,
               url,
+              date,
             }) => (
               <li key={slug + "-" + position} className="mb-8">
                 <WorkItem
@@ -35,6 +36,7 @@ export default async function PortfolioPage() {
                   image={image}
                   sourceCode={sourceCode}
                   url={url}
+                  date={date}
                 />
               </li>
             ),

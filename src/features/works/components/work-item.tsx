@@ -38,18 +38,15 @@ export function WorkItem({
           <MoveRightIcon />
         </Link>
       </div>
+      {date && (
+        <div className="mb-2 flex items-center gap-1">
+          <CalendarIcon className="size-3 md:size-4" />
+          <span className="text-xs text-muted-foreground md:text-sm">
+            {formatDate(date)}
+          </span>
+        </div>
+      )}
       <div className="max-w-none text-muted-foreground">{description}</div>
-      <div className="flex items-center justify-between">
-        {date && (
-          <dl>
-            <dt className="sr-only">Published On</dt>
-            <dd className="flex items-center gap-2 text-sm font-medium sm:text-base">
-              <CalendarIcon className="size-4" />
-              <time dateTime={date}>{formatDate(date)}</time>
-            </dd>
-          </dl>
-        )}
-      </div>
       {image && (
         <Image
           src={image}
