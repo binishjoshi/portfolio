@@ -11,7 +11,7 @@ export default function AboutPage() {
     <section className="pb-8 pt-6 md:mt-10 md:pb-12">
       <div className="container flex flex-col items-center gap-4 text-center">
         <Image
-          src="/static/images/profile-pic.jpg"
+          src="/images/profile-pic.jpg"
           height="200"
           width="200"
           alt="Profile Picture"
