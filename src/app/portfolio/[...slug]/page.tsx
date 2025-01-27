@@ -6,7 +6,6 @@ import { MdxContent } from "@/components/mdx-components";
 
 import "@/styles/mdx.css";
 import { siteConfig } from "../../../../config/site";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { CalendarIcon, ExternalLink } from "lucide-react";

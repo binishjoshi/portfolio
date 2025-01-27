@@ -49,8 +49,8 @@ export default function AboutPage() {
         <div className="flex max-w-screen-md flex-col gap-6">
           <p>
             I have worked as a Product Engineer and a Fullstack Developer in
-            freelance projects and for companies. If you'd like to collaborate,
-            please email me for my availability.
+            freelance projects and for companies. If you&apos;d like to
+            collaborate, please email me for my availability.
           </p>
           <p>
             Aside from work, I like to learn new languages, read books, watch
