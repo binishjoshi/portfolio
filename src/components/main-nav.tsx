@@ -10,13 +10,13 @@ export function MainNav() {
 
   return (
     <nav className="flex items-center space-x-4 lg:space-x-6">
-      <Link href="/" className="mr-6 flex items-center space-x-2">
+      <Link href="/" className="mr-6 flex items-center space-x-2 text-xl">
         Binish Joshi
       </Link>
       <Link
         href="/blog"
         className={cn(
-          "hidden text-sm font-medium transition-colors hover:text-primary md:inline-flex",
+          "hidden font-medium transition-colors hover:text-primary md:inline-flex",
           pathname === "/blog" ? "text-foreground" : "text-foreground/60",
         )}
       >
@@ -25,7 +25,7 @@ export function MainNav() {
       <Link
         href="/portfolio"
         className={cn(
-          "hidden text-sm font-medium transition-colors hover:text-primary md:inline-flex",
+          "hidden font-medium transition-colors hover:text-primary md:inline-flex",
           pathname === "/portfolio" ? "text-foreground" : "text-foreground/60",
         )}
       >
@@ -34,7 +34,7 @@ export function MainNav() {
       <Link
         href="/blog"
         className={cn(
-          "hidden text-sm font-medium transition-colors hover:text-primary md:inline-flex",
+          "hidden font-medium transition-colors hover:text-primary md:inline-flex",
           pathname === "/about" ? "text-foreground" : "text-foreground/60",
         )}
       >
