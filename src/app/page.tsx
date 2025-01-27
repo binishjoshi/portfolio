@@ -14,10 +14,10 @@ export default function Home() {
         </p>
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
           <Link
-            href="/blog"
+            href="/portfolio"
             className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-fit")}
           >
-            Blog
+            Full Portfolio
           </Link>
         </div>
       </div>

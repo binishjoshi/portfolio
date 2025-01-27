@@ -32,7 +32,7 @@ export function MainNav() {
         Portfolio
       </Link>
       <Link
-        href="/blog"
+        href="/about"
         className={cn(
           "hidden font-medium transition-colors hover:text-primary md:inline-flex",
           pathname === "/about" ? "text-foreground" : "text-foreground/60",
