@@ -1,3 +1,5 @@
+import { MailIcon } from "lucide-react";
+
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -18,6 +20,15 @@ export default function Home() {
             className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-fit")}
           >
             Full Portfolio
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:binishjoshi@proton.me"
+            className={cn(buttonVariants({ size: "lg" }), "px-4 sm:w-fit")}
+          >
+            <MailIcon className="size-6" />
+            Contact Me
           </Link>
         </div>
       </div>
