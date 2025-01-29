@@ -7,6 +7,7 @@ export default {
     config.plugins.push(new VeliteWebpackPlugin());
     return config;
   },
+  output: "export",
 };
 
 class VeliteWebpackPlugin {
