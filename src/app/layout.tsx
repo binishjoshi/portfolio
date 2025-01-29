@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     title: "Binish Joshi",
     description: "Product Engineer and Fullstack Developer",
   },
+  metadataBase: new URL("https://binishjoshi.com.np"),
 };
 
 export const viewport: Viewport = {
